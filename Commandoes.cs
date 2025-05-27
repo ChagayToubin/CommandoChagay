@@ -29,7 +29,7 @@ namespace Commando
             status = "Hide";
             Console.WriteLine("The soilder hide");
         }
-        public void Attack()
+        public virtual void  Attack()
         {
             status = "Attack";
             Console.WriteLine($"The commando {codename} attack");

@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public class SeaCommando:Commandoes
+    public class SeaCommando:Commandoes, InterfaceAttack
     {
         public SeaCommando(string Name, string Codename) :base(Name, Codename)
         {
-            Console.WriteLine("Update ");
+          
         }
         public void Diving()
         {
             Console.WriteLine("He have the abaliti to Diving");
+        }
+        public override void Attack()
+        {
+            status = "Attack";
+            Console.WriteLine($"The commando {codename} attack in the sea" );
         }
     }
 }
