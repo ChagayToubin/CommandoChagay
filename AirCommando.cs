@@ -7,15 +7,20 @@ using System.Xml.Linq;
 
 namespace Commando
 {
-    public class AirCommando:Commandoes
+    public class AirCommando:Commandoes, InterfaceAttack
     {
         public AirCommando(string Name, string Codename) :base( Name,  Codename)
         {
-            Console.WriteLine("Update ");
+          
         }
         public void skydiving()
         {
             Console.WriteLine("He have the abaliti to skydiving");
+        }
+        public override void Attack()
+        {
+            status = "Attack";
+            Console.WriteLine($"The commando {codename} attack in the air");
         }
     }
 }
