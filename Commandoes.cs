@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public class Commandoes
+    public  class Commandoes
     {
-        private string name;
+        protected string name;
         public string codename { get; set; }
         public static string[] tools = { "Hammer", "Chisel", "Rope", "Backpack", "Canteen" };
         public string status;
