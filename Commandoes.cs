@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public  class Commandoes
+    public class Commandoes
     {
         protected string name;
         public string codename { get; set; }
@@ -36,19 +36,19 @@ namespace Commando
         }
         public string SayName(string commanderRank)
         {
-            if(commanderRank== "GENERAL ")
+            if (commanderRank == "GENERAL")
             {
                 return this.name;
 
             }
-            else if(commanderRank== "COLONEL ")
+            else if (commanderRank == "COLONEL ")
             {
                 return this.codename;
             }
             else
             {
-                Console.WriteLine("Access denied.\n insufficient classification");
-                return "Access denied, insufficient classification";
+
+                return "!@!@#$%%^&**(*&^^%$#@@!!@##$$%^&\nAccess denied,\ninsufficient classification";
             }
         }
 
