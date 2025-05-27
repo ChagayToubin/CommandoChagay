@@ -9,9 +9,10 @@ namespace Commando
     internal class EnemyFactory
     {
         public static List<Enemy> ListEnmy = new List<Enemy>();
-        public static void AddEnmy(string name)
+        public static void AddEnmy()
         {
-            EnemyFactory.ListEnmy.Add(new Enemy(name));
+            Console.WriteLine("Enter a name to new enemy");
+            EnemyFactory.ListEnmy.Add(new (Console.ReadLine()));
 
         }
     }
