@@ -8,10 +8,10 @@ namespace Commando
 {
     internal class EnemyFactory
     {
-        public List<Enemy> ListEnmy = new List<Enemy>();
-        public void AddEnmy(string name)
+        public static List<Enemy> ListEnmy = new List<Enemy>();
+        public static void AddEnmy(string name)
         {
-            ListEnmy.Add(new Enemy(name));
+            EnemyFactory.ListEnmy.Add(new Enemy(name));
 
         }
     }
