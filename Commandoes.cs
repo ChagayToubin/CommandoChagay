@@ -10,9 +10,9 @@ namespace Commando
     {
         public string name;
         public string codename;
-        public static string[] tools;
+        public static string[] tools = { "Hammer", "Chisel", "Rope", "Backpack", "Canteen" };
         public string status;
-        public Commandoes(string Name,string Codename)
+        public Commandoes(string Name, string Codename)
         {
             name = Name;
             codename = Codename;
