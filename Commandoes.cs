@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public class Commandoes
+    public abstract class Commandoes
     {
         private string name;
         public string codename { get; set; }
