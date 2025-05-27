@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public class Weapon
+    public class WeaponBullet:BaseWeapon
     {
-        public string name;
+      
         public string manufacturer;
         public double numberbullets;
-        public Weapon(string Name,string Manufacturer ,double Numberbullets)
+        public WeaponBullet(string name, string color, double weight, string Manufacturer, double Numberbullets) :base( name,  color,  weight)
         {
-            name = Name;
+           
             manufacturer = Manufacturer;
             numberbullets = Numberbullets;
 
