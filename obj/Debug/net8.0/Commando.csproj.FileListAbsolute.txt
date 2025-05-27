@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Commando\bin\Debug\net8.0\Commando.exe
+C:\Users\User\source\repos\Commando\bin\Debug\net8.0\Commando.deps.json
+C:\Users\User\source\repos\Commando\bin\Debug\net8.0\Commando.runtimeconfig.json
+C:\Users\User\source\repos\Commando\bin\Debug\net8.0\Commando.dll
+C:\Users\User\source\repos\Commando\bin\Debug\net8.0\Commando.pdb
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.AssemblyInfo.cs
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.sourcelink.json
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.dll
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\refint\Commando.dll
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.pdb
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\Commando.genruntimeconfig.cache
+C:\Users\User\source\repos\Commando\obj\Debug\net8.0\ref\Commando.dll
