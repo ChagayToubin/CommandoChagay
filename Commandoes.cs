@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    public class Commandoes
+    public abstract class Commandoes
     {
         protected string name;
         public string codename { get; set; }
@@ -51,6 +51,9 @@ namespace Commando
                 return "!@!@#$%%^&**(*&^^%$#@@!!@##$$%^&\nAccess denied,\ninsufficient classification";
             }
         }
+        public abstract void PrintInfo();
+       
+
 
     }
 }

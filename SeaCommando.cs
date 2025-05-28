@@ -21,6 +21,13 @@ namespace Commando
             status = "Attack";
             Console.WriteLine($"The commando {codename} attack in the sea" );
         }
+        public override void PrintInfo()
+        {
+            Program.PrintRed($"Commando Info:\nName: {this.SayName("GENERAL")}\nCodename: {codename}\nStatus: {status}\nSpeciality: Sea Commando (Can dive)\n------------------------\n");
+        }
+
+
+
     }
 }
 

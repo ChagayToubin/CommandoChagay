@@ -1,19 +1,56 @@
 ﻿namespace Commando
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            
             GAME game = new GAME();
-            game.ADDCOMMANDO();
-            Console.WriteLine($"--------{FactoryCommando.ListCommando[0].codename}-----------------");
+            bool exit = false;
 
-            game.ADDENEMY();
-            Console.WriteLine($"-------{EnemyFactory.ListEnmy[0].alive}---{EnemyFactory.ListEnmy[0].name}");
+            while (!exit)
+            {
+               
+                Console.WriteLine("1.Create Soldier\n2.Create Enemy\n3 Create Weapon\n");
+              
+                string choice = Console.ReadLine();
 
-            game.ADDWEAPON();
-            Console.WriteLine($"=-=-={FactoryWeapon.ListWeapon[0].Color}-----{FactoryWeapon.ListWeapon[0].Weight}----{FactoryWeapon.ListWeapon[0].Name}");
+                switch (choice)
+                {
+                    case "1":
+                        Console.WriteLine("creating soldier");
+                        game.ADDCOMMANDO();
+                        break;
+
+                    case "2":
+                        Console.WriteLine("creating enemy");
+                        game.ADDENEMY();
+                        break;
+
+                    case "3":
+                        Console.WriteLine("creating weapon");
+                        game.ADDWEAPON();
+                        break;
+
+                    case "0":
+                        Console.WriteLine("exiting");
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option, please try again.");
+                        break;
+                }
+            }
         }
-       
+            
+        public static void PrintRed(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Thread.Sleep(100);
+            Console.ResetColor(); // מחזיר לצבע ברירת מחדל
+        }
+
     }
 }

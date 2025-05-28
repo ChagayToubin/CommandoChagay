@@ -23,7 +23,12 @@ namespace Commando
             numberbullets--;
             Console.WriteLine("The bullet was shoot");
         }
-        
+        public override void PrintInfo()
+        {
+            Program.PrintRed($"Weapon Info:\nName: {Name}\nColor: {Color}\nWeight: {Weight}\nManufacturer: {manufacturer}\nNumber of Bullets: {numberbullets}\n------------------------\n");
+        }
+
+
 
 
 
