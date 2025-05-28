@@ -12,7 +12,7 @@ namespace Commando
         //(int KINDOFWEAPON,string name="", string color="", double weight=0, bool Status=true, int Quantitydurability=0, string Manufacturer="", string Metaltype="", double Numberbullets=0)
         public static void AddWeapon()
         {
-            Console.WriteLine("enter number betwin 1-3 to create new weapon");
+            Console.WriteLine("enter number betwin 1-3 to create new weapon 1-for guns 2-for Knif 3-for stone  ");
             int KINDOFWEAPON = int.Parse(Console.ReadLine());
             switch (KINDOFWEAPON)
             {
@@ -29,6 +29,7 @@ namespace Commando
 
 
             }
+            ListWeapon.Last().PrintInfo();
 
         }
     }

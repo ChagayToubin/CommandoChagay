@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Commando
 {
-    public class BaseWeapon
+    public  abstract class BaseWeapon
     {
         public string Name { get; set; }
         public string Color { get; set; }
@@ -19,6 +19,7 @@ namespace Commando
             Color = color;
             Weight = weight;
         }
+        public abstract void PrintInfo();
     }
 
 }
